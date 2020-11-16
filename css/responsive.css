@@ -1,0 +1,113 @@
+
+@media screen and (max-width: 1068px) {
+    /* CONFIGURAÇÕES GERAIS */
+    .container {
+        max-width: 100rem;
+    }
+    .iconToggleOpen {
+        display: none;
+    }
+    .header__menu {
+        display: none;
+    }
+
+    /* ---- HEADER ---- */
+    .header__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .header__content__logo h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+        color: #ffffff;
+        transition: 0.3s linear;
+        text-align: center;
+    }
+    /* ---- FIM HEADER ---- */
+
+    /* ---- MAIN ---- */
+    .content__text {
+        position: absolute;
+        top: 18vh;
+        left: 30px;
+        right: 30px;
+        width: calc(100% - 60px);
+        height: auto;
+        padding: 3rem 2rem;
+        color: #ffffff;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6530987394957983) 75%);
+        border-radius: 5px;
+        transition: 0.3s linear all;
+        transition-delay: 0.3s !important;
+    }
+    .content__text h2 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    .content__text p {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+    /* ---- FIM MAIN ---- */
+
+
+    /* ---- ASIDE MOBILE ---- */
+    .header__menu__mobile {
+        display: block;
+
+        position: fixed;
+        right: 5px;
+        top: calc(50% - 125px);
+
+    }
+    .header__menu__mobile__lista__item {
+        display: block;
+        margin: 5px 0;
+        
+        transition: 0.3s linear;
+    }
+    .header__menu__mobile__lista__item:hover {
+        transition: 0.3s linear;
+        transform: scale(1.1);
+    }
+    .header__menu__mobile__lista__link img {
+        border-radius: 50%;
+
+        display: block;
+        object-fit: cover;
+        height: 45px;
+        width: 45px;
+    }
+    
+    /* ---- FIM ASIDE MOBILE ---- */
+}
+
+@media screen and (max-width: 768px) {
+    /* CONFIGURAÇÕES GERAIS */
+    .container {
+        width: 100%;
+    }
+
+    /* ---- HEADER ---- */
+    
+    /* ---- FIM HEADER ---- */
+    
+
+    /* ---- MAIN ---- */
+
+    
+    /* ---- FIM MAIN ---- */
+
+
+    /* ---- FOOTER ---- */
+
+    /* ---- FIM FOOTER ---- */
+}
+
