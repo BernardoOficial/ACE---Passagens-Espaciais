@@ -55,6 +55,18 @@
         font-size: 1.4rem;
         line-height: 1.8rem;
     }
+    .content__text a {
+        margin: 3rem auto 0;
+        padding: 12px 14px;
+
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        display: block;
+        max-width: 136px;
+    }
+    .content__text a:hover {
+        transform: translateX(0px) translateY(-6px);
+    }
     /* ---- FIM MAIN ---- */
 
 

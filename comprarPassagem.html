@@ -20,10 +20,11 @@
 
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/comprarPassagem.css">
 
 </head>
 
-<body>
+<body id="comprarPassagem">
 
     <header>
 
@@ -33,14 +34,6 @@
                 <a href="./index.html" class="header__content__logo">
                     <h1>ACE <span>Andromeda Centaurus Expeditions</span></h1>
                 </a>
-
-                <div class="header__content__buttons">
-                    <button class="iconToggleOpen" data-menu-open title="Abrir menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
             </nav>
 
         </div>
@@ -49,50 +42,50 @@
 
     <main>
 
-        <section class="content__images">
+        <section class="container__form">
 
-            <div class="content__images__item" data-content="1">
-                <img src="./img/locais-viagens/lugar-06.png" alt="">
-                <div class="content__text">
-                    <h2>Venha com a gente nesta viagem!</h2>
-                    <p>
-                        A ACE é uma empresa que surgiu para conectar a humanidade com a vida extraterrestre, operando
-                        especialmente em Pandora,
-                        uma planeta bem distante da Terra. <br><br>
+            <form action="#" method="GET">
 
-                        Nos últimos anos, a empresa direcionou todos os seus esforços para reestabelecer a relação entre
-                        o povo Na'vi, nativo do
-                        planeta, e os seres humanos. Entendemos que é um povo que tem muito a contribuir em relação a
-                        avanços tecnológicos,
-                        respeito ao meio ambiente e crescimento sustentável. <br><br>
-
-                        Oferecemos voos diretos de ida e volta para o planeta Pandora com direito a crioterapia para
-                        todos os passageiros
-                        conservarem seus corpos durante os anos luz da viagem. <br><br>
-
-                        Abra o menu lateral e descubra as belezas desse fascinante Planeta. <br>
-                    </p>
+                <div class="campo">
+                    <input type="text" id="nome" name="nome" required placeholder=" ">
+                    <label for="nome">Nome do responsável</label>
                 </div>
-            </div>
-
-            <div class="content__images__item" data-content="2">
-                <img src="./img/locais-viagens/lugar-02.jpg" alt="">
-                <div class="content__text">
-                    <h2>Pandora Lakes</h2>
-                    <p>
-                        Navegue com os nossos guias pelas águas calmas de Pandora apreciando a bioluminescência da flora
-                        e fauna locais.<br>
-                    </p>
+                <div class="campo">
+                    <input type="text" id="email" name="email" required placeholder=" ">
+                    <label for="email">Email do responsável</label>
                 </div>
-            </div>
+                <div class="campo">
+                    <input type="date" id="data-nasc" name="data-nasc" min="1920-01-01" required placeholder=" ">
+                    <label for="data-nasc">Data de nascimento: </label>
+                </div>
+                <div class="campo">
+                    <input type="number" min="0" max="4" id="quant-pessoas" name="quant-pessoas" required
+                        placeholder=" ">
+                    <label for="quant-pessoas">Quantidade de pessoas</label>
+                </div>
+                <div class="campo">
+                    <input type="date" id="data-viagem" min="2020-11-16" name="data-viagem" required placeholder=" ">
+                    <label for="data-viagem">Data da viagem</label>
+                </div>
+                <div class="campo">
+                    <select name="destino" required placeholder=" ">
+                        <option value="" selected disabled></option>
+                        <option value="Lakes">Pandora Lakes</option>
+                        <option value="Archipelago">Pandora Archipelago</option>
+                        <option value="Rocks">Pandora's Rocks</option>
+                        <option value="Moons">Pandora's Moons</option>
+                    </select>
+                    <label for="destino">Destino:</label>
+                </div>
 
+                <button>Partiu viajar!</button>
 
+            </form>
 
         </section>
 
     </main>
 
-    <script src="./js/alternarContent.js"></script>
 </body>
 
 </html>

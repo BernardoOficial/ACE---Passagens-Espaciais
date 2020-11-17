@@ -1,0 +1,128 @@
+#comprarPassagem .header__content {
+    justify-content: center;
+}
+
+body#comprarPassagem {
+    background-image: url(../img/locais-viagens/lugar-06.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    clip-path: none;
+}
+body#comprarPassagem main {
+    width: initial;
+    height: initial;
+}
+
+body#comprarPassagem header {
+    position: relative;
+    
+    width: 100%;
+    
+    transition: 0.5s ease-in all;
+    transition-delay: 0.3s !important;
+}
+
+.container__form {
+    background-color: #33333399;
+
+    margin: -52px auto;
+    padding: 100px 40px 40px;
+    
+    border-radius: 10px;
+    max-width: 800px;
+}
+.container__form .campo{
+    position: relative;
+
+    margin: 2rem 0;
+}
+.container__form .campo input,
+.container__form .campo select{
+    position: relative;
+
+    min-width: 400px;
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 3px;
+    outline: none;
+
+    color: #333333;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+.container__form .campo input[type="date"] {
+    position: relative;
+
+    min-width: 400px;
+    width: 100%;
+    padding: 32px 15px 10px;
+    border-radius: 3px;
+    outline: none;
+
+    color: #333333;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+.container__form .campo label{
+    position: absolute;
+    left: 15px;
+    top: calc(50% - 1rem);
+    
+    border-radius: 3px;
+
+    color: #333333;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+.container__form .campo label[for="data-nasc"],
+.container__form .campo label[for="data-viagem"]{
+    top: calc(20% - 1rem);
+
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+form select:focus ~ label,
+form select:required:valid ~ label,
+form select:not(:placeholder-shown) ~ label{
+    position: absolute;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    top: -0px;
+
+    transition: 0.3s linear;
+}
+form input:focus ~ label,
+form input:required:valid ~ label,
+form input:not(:placeholder-shown) ~ label{
+    position: absolute;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    top: -0px;
+
+    transition: 0.3s linear;
+}
+.container__form button{
+    display: inline-block;
+
+    margin-top: 2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+
+    color: #333333;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 300;
+
+    transition: 0.3s linear;
+}
+.container__form button:hover{
+    transition: 0.3s linear;
+
+    transform: translateX(15px);
+}
