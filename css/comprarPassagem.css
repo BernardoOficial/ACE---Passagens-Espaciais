@@ -23,7 +23,7 @@ body#comprarPassagem header {
     transition-delay: 0.3s !important;
 }
 
-.container__form {
+.container__comprar {
     background-color: #33333399;
 
     margin: -52px auto;
@@ -31,14 +31,19 @@ body#comprarPassagem header {
     
     border-radius: 10px;
     max-width: 800px;
+    width: 100%;
+    box-shadow: 0 5px 30px 2px black;
 }
-.container__form .campo{
+.container__comprar--extends {
+    max-width: 1100px;
+}
+.container__comprar .campo{
     position: relative;
 
     margin: 2rem 0;
 }
-.container__form .campo input,
-.container__form .campo select{
+.container__comprar .campo input,
+.container__comprar .campo select{
     position: relative;
 
     min-width: 400px;
@@ -52,7 +57,7 @@ body#comprarPassagem header {
     line-height: 2rem;
     font-weight: 300;
 }
-.container__form .campo input[type="date"] {
+.container__comprar .campo input[type="date"] {
     position: relative;
 
     min-width: 400px;
@@ -66,7 +71,7 @@ body#comprarPassagem header {
     line-height: 2rem;
     font-weight: 300;
 }
-.container__form .campo label{
+.container__comprar .campo label{
     position: absolute;
     left: 15px;
     top: calc(50% - 1rem);
@@ -78,8 +83,8 @@ body#comprarPassagem header {
     line-height: 2rem;
     font-weight: 300;
 }
-.container__form .campo label[for="data-nasc"],
-.container__form .campo label[for="data-viagem"]{
+.container__comprar .campo label[for="data-nasc"],
+.container__comprar .campo label[for="data-viagem"]{
     top: calc(20% - 1rem);
 
     font-size: 1.4rem;
@@ -106,7 +111,7 @@ form input:not(:placeholder-shown) ~ label{
 
     transition: 0.3s linear;
 }
-.container__form button{
+.container__comprar form button{
     display: inline-block;
 
     margin-top: 2rem;
@@ -121,8 +126,53 @@ form input:not(:placeholder-shown) ~ label{
 
     transition: 0.3s linear;
 }
-.container__form button:hover{
+.container__comprar form button:hover{
     transition: 0.3s linear;
 
     transform: translateX(15px);
+}
+.table {
+    display: none;
+    border: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.table td {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+.table thead td,
+.table tfoot td{
+    color: #00C896;
+    background-color: #333333;
+}
+.buttons {
+    display: none;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.buttons a,
+.buttons button {
+    display: inline-block;
+
+    margin: 0 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+
+    color: #333333;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 300;
+
+    transition: 0.3s linear;
+}
+.buttons a:hover,
+.buttons button:hover{
+    transition: 0.3s linear;
+
+    transform: translateY(-5px);
 }

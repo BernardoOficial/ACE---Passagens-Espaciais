@@ -42,7 +42,7 @@
 
     <main>
 
-        <section class="container__form">
+        <section class="container__comprar">
 
             <form action="#" method="GET">
 
@@ -59,12 +59,12 @@
                     <label for="data-nasc">Data de nascimento: </label>
                 </div>
                 <div class="campo">
-                    <input type="number" min="0" max="4" id="quant-pessoas" name="quant-pessoas" required
+                    <input type="number" min="0" max="4" id="quant-pessoas" name="quantPessoas" required
                         placeholder=" ">
                     <label for="quant-pessoas">Quantidade de pessoas</label>
                 </div>
                 <div class="campo">
-                    <input type="date" id="data-viagem" min="2020-11-16" name="data-viagem" required placeholder=" ">
+                    <input type="date" id="data-viagem" min="2020-11-16" name="dataViagem" required placeholder=" ">
                     <label for="data-viagem">Data da viagem</label>
                 </div>
                 <div class="campo">
@@ -78,14 +78,54 @@
                     <label for="destino">Destino:</label>
                 </div>
 
-                <button>Partiu viajar!</button>
+                <button data-btn-comprar>Partiu viajar!</button>
 
             </form>
+
+            <table class="table" cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Email</td>
+                        <td>Data de nascimento</td>
+                        <td>Quantidade de viajantes</td>
+                        <td>Data da viagem</td>
+                        <td>Local de hospedagem</td>
+                        <td>Valor total da hospedagem</td>
+                        <td>Valor total do translado</td>
+                        <td>Valor final da viagem</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Email</td>
+                        <td>Data de nascimento</td>
+                        <td>Quantidade de viajantes</td>
+                        <td>Data da viagem</td>
+                        <td>Local de hospedagem</td>
+                        <td>Valor total da hospedagem</td>
+                        <td>Valor total do translado</td>
+                        <td>Valor final da viagem</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="9">Atualizado às 19:33 - 17/11/2020</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div class="buttons">
+                <button data-btn-voltar>Voltar</button>
+                <a href="./index.html">Ir para página inicial</a>
+            </div>
 
         </section>
 
     </main>
 
+    <script src="./js/alternarCompra.js"></script>
 </body>
 
 </html>
