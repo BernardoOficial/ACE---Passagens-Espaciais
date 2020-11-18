@@ -35,7 +35,7 @@ body#comprarPassagem header {
     box-shadow: 0 5px 30px 2px black;
 }
 .container__comprar--extends {
-    max-width: 1100px;
+    max-width: 1200px;
 }
 .container__comprar .campo{
     position: relative;
@@ -138,7 +138,7 @@ form input:not(:placeholder-shown) ~ label{
     border-radius: 5px;
 }
 .table td {
-    padding: 5px;
+    padding: 10px 10px;
     text-align: center;
     font-size: 1.3rem;
     line-height: 1.7rem;
