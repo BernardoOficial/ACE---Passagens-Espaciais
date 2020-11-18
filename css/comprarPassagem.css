@@ -46,7 +46,6 @@ body#comprarPassagem header {
 .container__comprar .campo select{
     position: relative;
 
-    min-width: 400px;
     width: 100%;
     padding: 15px 15px;
     border-radius: 3px;
@@ -60,7 +59,6 @@ body#comprarPassagem header {
 .container__comprar .campo input[type="date"] {
     position: relative;
 
-    min-width: 400px;
     width: 100%;
     padding: 32px 15px 10px;
     border-radius: 3px;
@@ -136,6 +134,7 @@ form input:not(:placeholder-shown) ~ label{
     border: 0;
     background-color: #ffffff;
     border-radius: 5px;
+    border-spacing: 0;
 }
 .table td {
     padding: 10px 10px;
@@ -175,4 +174,53 @@ form input:not(:placeholder-shown) ~ label{
     transition: 0.3s linear;
 
     transform: translateY(-5px);
+}
+
+
+@media screen and (max-width: 768px) {
+    /* CONFIGURAÇÕES GERAIS */
+
+    /* ---- HEADER ---- */
+    
+    /* ---- FIM HEADER ---- */
+    
+
+    /* ---- MAIN ---- */
+    .container__comprar {
+        margin: -30px auto;
+        padding: 60px 40px 40px;
+    }
+    .container__comprar .campo input,
+    .container__comprar .campo select{
+        padding: 15px 15px;
+
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+    .container__comprar .campo input[type="date"] {
+        padding: 32px 15px 10px;
+
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+    .container__comprar .campo label{
+        left: 15px;
+        top: calc(50% - 1rem);
+
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+    .table thead tr td {
+        display: block;
+    }
+    
+    /* ---- FIM MAIN ---- */
+
+
+    /* ---- FOOTER ---- */
+
+    /* ---- FIM FOOTER ---- */
 }
