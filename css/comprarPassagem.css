@@ -135,12 +135,18 @@ form input:not(:placeholder-shown) ~ label{
     background-color: #ffffff;
     border-radius: 5px;
     border-spacing: 0;
+    overflow-x: scroll;
 }
 .table td {
-    padding: 10px 10px;
+    padding: 15px 10px;
     text-align: center;
     font-size: 1.3rem;
     line-height: 1.7rem;
+
+    min-width: 150px;
+}
+.table tbody td {
+    border: 1px solid rgba(0,0,0,0.2);
 }
 .table thead td,
 .table tfoot td{
@@ -168,6 +174,7 @@ form input:not(:placeholder-shown) ~ label{
     font-weight: 300;
 
     transition: 0.3s linear;
+    text-align: center;
 }
 .buttons a:hover,
 .buttons button:hover{
@@ -210,12 +217,23 @@ form input:not(:placeholder-shown) ~ label{
         font-size: 1.4rem;
         line-height: 1.8rem;
     }
-    table, thead, tbody, th, td, tr { 
+    /* table, tfoot, td, tr { 
 		display: block; 
 	}
-    .table thead tr td {
-        display: block;
+    .table thead,
+    .table tbody {
+        display: inline-block;
+        width: 48.5%;
     }
+    .table thead tr,
+    .table tbody tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .table thead tr td,
+    .table tbody tr td {
+        height: 50px;
+    } */
     
     /* ---- FIM MAIN ---- */
 
