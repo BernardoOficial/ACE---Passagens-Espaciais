@@ -11,11 +11,8 @@ html {
     line-height: 16px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
-
 body {
-    transition: 0.3s;
-    transition-delay: 0.3s;
-    clip-path: circle(0px at center);
+
 }
 
 header {
